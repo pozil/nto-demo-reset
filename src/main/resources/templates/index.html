@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
+
+<body>
+
+<div class="jumbotron text-center">
+  <div class="container">
+
+    <img src="/nto_logo_white.png" class="logo"/>
+    <h1>NTO Demo Reset</h1>
+    <p>This app allows you to reset the NTO demo environment.</p>
+    
+    <div id="success" class="alert alert-success hidden" role="alert">Operation succeeded</div>
+    <div id="error" class="alert alert-danger hidden" role="alert"></div>
+    <div id="controls">
+	    <button id="btnResetDemo" type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-fast-backward"></span> Reset</button>
+	    <button id="btnCompleteDemo" type="button" class="btn btn-lg btn-default">Complete <span class="glyphicon glyphicon-fast-forward"></span></button>
+    </div>
+    <div id="loader" class="hidden">
+    	<img src="/spinner.gif"/>
+    </div>
+    
+  </div>
+</div>
+
+</body>
+</html>
